@@ -22,7 +22,6 @@ public class SelectLiquorServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         String liquorType = req.getParameter("Type");
-
         LiquorService liquorService = new LiquorService();
         LiquorType l = LiquorType.valueOf(liquorType);
 
