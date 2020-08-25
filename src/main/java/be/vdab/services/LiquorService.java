@@ -22,6 +22,10 @@ public class LiquorService {
         }else if(type.equals(LiquorType.BEER)){
             brands.add("Corona");
 
+        }else if(type.equals(LiquorType.GIN)){
+            brands.add("Tanqueray London Dry Gin");
+            brands.add("Bombay Sapphire London Dry Gin");
+
         }else {
             brands.add("No Brand Available");
         }
