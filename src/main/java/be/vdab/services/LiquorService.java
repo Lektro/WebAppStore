@@ -9,7 +9,7 @@ public class LiquorService {
 
     public List getAvailableBrands(LiquorType type){
 
-        List brands = new ArrayList();
+        List<String> brands = new ArrayList<>();
 
         if(type.equals(LiquorType.WINE)){
             brands.add("Adrianna Vineyard");

@@ -33,7 +33,7 @@
 
     </dependencies>
     <build>
-        <finalName>SampleServlet</finalName>
+        <finalName>WebAppStore</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
