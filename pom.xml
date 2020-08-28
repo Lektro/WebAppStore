@@ -27,6 +27,7 @@
     </dependencies>
 
     <build>
+        <defaultGoal>install</defaultGoal>
         <finalName>SampleServlet</finalName>
         <plugins>
             <plugin>
