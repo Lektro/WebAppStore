@@ -23,9 +23,9 @@ public class SelectLiquorServlet extends HttpServlet {
 
         String liquorType = req.getParameter("Type");
         LiquorService liquorService = new LiquorService();
-        LiquorType l = LiquorType.valueOf(liquorType);
+        LiquorType ls = LiquorType.valueOf(liquorType);
 
-        List liquorBrands = liquorService.getAvailableBrands(l);
+        List liquorBrands = liquorService.getAvailableLiquorBrands(ls);
 
         req.setAttribute("brands", liquorBrands);
         RequestDispatcher view = req.getRequestDispatcher("result.jsp");

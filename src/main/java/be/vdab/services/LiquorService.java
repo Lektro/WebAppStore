@@ -6,7 +6,7 @@ import java.util.List;
 
 public class LiquorService {
 
-    public List getAvailableBrands(LiquorType type){
+    public List getAvailableLiquorBrands(LiquorType type){
 
         List<String> brands = new ArrayList<>();
 

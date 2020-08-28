@@ -1,13 +1,11 @@
 package be.vdab.services;
 
-import be.vdab.model.LiquorType;
 import be.vdab.model.SodaType;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class SodaService {
-    public List getAvailableBrands(SodaType type){
+    public List getAvailableSodaBrands(SodaType type){
 
         List<String> brands = new ArrayList<>();
 

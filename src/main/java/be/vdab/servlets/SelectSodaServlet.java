@@ -22,10 +22,11 @@ public class SelectSodaServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         String sodaType = req.getParameter("Type");
-        SodaService sodaService = new SodaService();
-        SodaType l = SodaType.valueOf(sodaType);
 
-        List sodaBrands = sodaService.getAvailableBrands(l);
+        SodaService sodaService = new SodaService();
+        SodaType st = SodaType.valueOf(sodaType);
+
+        List sodaBrands = sodaService.getAvailableSodaBrands(st);
 
         req.setAttribute("brands", sodaBrands);
         RequestDispatcher view = req.getRequestDispatcher("result.jsp");
